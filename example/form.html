@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Form</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+  <nav class="menu">
+		<ul>
+      <li><a href="myPlaces.html">My Places</a></li>
+			<li><a href="formInput.html">Form Input</a></li>
+		</ul>
+	</nav>
+</div>
+<h1>Form</h1>
+
+<div id = "form">
+  <form method = "POST" action = "http://localhost:9011">
+    <label for="placename">First Name</label>
+    <input type="text" id="placename" name="placename" required>
+    <label for="addressline1">Apt#, Street Address</label>
+    <input type="text" id="addressline1" name="addressline1" required>
+    <label for="addressline2">City, zip code</label>
+    <input type="text" id="addressline2" name="addressline2">
+    <label for="opentime">Place opening time</label>
+    <input type="time" id="opentime" name="opentime" required>
+    <label for="closetime">Place closing time</label>
+    <input type="time" id="closetime" name="closetime" required>
+    <label for="additionalinfo">Link to additional information</label>
+    <input type="text" id="additionalinfo" name="additionalinfo">
+    <label for="additionalinfourl">Additional information url</label>
+    <input type="url" id="additionalinfourl" name="additionalinfourl">
+    <input type="hidden" name="action" value="login" />
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
